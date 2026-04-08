@@ -122,7 +122,7 @@ body {
 /* Home Page */
 
 #hero {
-    background-image: url("img/background.jpg");
+    background-image: url("img/bg.avif");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -309,7 +309,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("img/banner.jpg");
+    background-image: url("img/banner2.avif");
     width: 100%;
     height: 30vh;
     background-size: cover;
@@ -425,4 +425,134 @@ footer .col {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
+}
+
+/* shop page */
+#page-header{
+    background-image: url("img/banner2.avif");
+   width: 100%;
+   height: 40vh;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+   padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+    color: #fff;
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Single product */
+#prodetails .single-pro-image {
+    width: 40%;
+    margin-right: 50px;
+}
+
+#page-header.blog-header{
+    background-image: url(img/knowmore.webp);
+}
+
+#blog {
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+display: flex;
+align-items: center;
+width: 100%;
+position: relative;
+padding-bottom: 90px;
+}
+
+#blog .blog-img {
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog img {
+    width: 90%;
+    height: 300%;
+    object-fit: cover;
+}
+
+#blog .blog-details {
+    width: 50%;
+}
+
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 11px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+
+#blog .blog-details a::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+}
+
+#blog .blog-box h1 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -9;
+}
+
+/* About Page */
+#page-header.about-header {
+    background-image: url(img/know\ us.avif);
+    background-size: cover;        /* fills entire section */
+    background-position: center;   /* keeps it centered */
+    background-repeat: no-repeat;  /* prevents tiling */
+    width: 100%;
+    min-height: 300px;             /* adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    
+}
+  #page-header.about-header p,
+#page-header.about-header h2 {
+    color: #302f2f; 
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head img {
+    width: 50%;
+    height: auto;
+}
+
+#about-head div {
+    padding-left: 40px;
 }
