@@ -6,6 +6,12 @@
     font-family: 'Spartan', sans-serif;
 }
 
+#header a img{
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+}
+
 h1 {
     font-size: 50px;
     line-height: 64px;
@@ -118,6 +124,11 @@ body {
     left: 20px;
 }
 
+#mobile {
+    display: none;
+    align-items: center;
+}
+
 
 /* Home Page */
 
@@ -153,6 +164,12 @@ body {
   cursor: pointer;
   font-weight: 700;
   font-size: 15px;
+}
+
+#hero button a {
+    text-decoration: none;
+    color: #088178;
+
 }
 
 #feature{
@@ -309,7 +326,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("img/banner2.avif");
+    background-image: url("img/coolbanner.avif");
     width: 100%;
     height: 30vh;
     background-size: cover;
@@ -331,6 +348,11 @@ body {
     color: #ef3636;
 }
 
+#banner button a {
+    text-decoration: none;
+    color: #000;
+}
+
 #banner button:hover {
     background: #088178;
     color: #bdb2b2;
@@ -346,15 +368,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("img/winter.webp");
-    min-width: 580px;
+    background-image: url("img/banner.girlinyellow.jpg");
+    min-width: 600px;
     height: 50vh;
     background-size: cover;
     background-position: center;
     padding: 30px;
 }
 #sm-banner .banner-box2{
-    background-image: url(img/new-arrival.jpeg);
+    background-image: url(img/banner-shirt.jpg);
 }
 
 #sm-banner h4 {
@@ -379,18 +401,72 @@ body {
     border: 1px solid #088178;
 }
 
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    gap: 8%;
+}
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-image: url("img/banner.sm.png");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#banner3 .banner-box2{
+    background-image: url("img/banner-sm2.png");
+}
+
+#banner3 .banner-box3{
+    background-image: url("img/banner-sm3.png");
+}
+
+#banner3 h2{
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#banner3 h3{
+    color: #ec544e;
+    font-weight: 800;
+    font-size: 15px;
+}
+
 #newsletter {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image: ;
     background-position: 20% 30%;
-    background-color: #99beec;
+    background-color: #162c47;
 }
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+
 #newsletter p span{
-    color: #887e68;
+    color: #ffbd27;
 }
+
 #newsletter .form {
     display: flex;
     width: 40%;
@@ -415,11 +491,13 @@ body {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+
 footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 footer .col {
     display: flex;
     flex-direction: column;
@@ -427,9 +505,146 @@ footer .col {
     margin-bottom: 20px;
 }
 
+footer .logo {
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin: 10px;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img {
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #088178;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+/* Start Media Query */
+@media (max-width:799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    #mobile {
+    display: flex;
+    align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 477px) {
+    .section-p1 {
+        padding: 20px;
+    }
+#header {
+    padding: 10px 30px;
+}  
+h1 {
+    font-size: 38px;
+    
+}  
+h2 {
+    font-size: 46px;
+}
+#hero {
+    padding: 0 20px;
+    background-position: 55%;
+}
+#feature {
+    justify-content: space-between;
+}
+#feature .fe-box {
+    width: 155px;
+    margin: 0 0 15px 0;
+}
+#product .pro {
+    width: 100%;
+}
+#banner {
+    height: 40vh;
+}
+#sm-banner .banner-box {
+    height: 40vh;
+}
+#sm-banner .banner-box2 {
+    margin-top: 20px;
+}
+#banner .banner-box {
+    width: 100%;
+}
+#newsletter {
+    padding: 40px 20px;
+}
+#newsletter .form {
+    width: 100%;
+}
+footer .copyright {
+    text-align:start;
+}
+}
+
 /* shop page */
 #page-header{
-    background-image: url("img/banner2.avif");
+    background-image: url("img/coolbanner.avif");
    width: 100%;
    height: 40vh;
    background-size: cover;
@@ -459,13 +674,40 @@ footer .col {
 }
 
 /* Single product */
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
 #prodetails .single-pro-image {
     width: 40%;
     margin-right: 50px;
 }
 
+#prodetails .single-pro-details {
+    display: flex;
+    flex-direction: column;
+}
+
+#prodetails .single-pro-details .cart-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+#prodetails .single-pro-details select,
+#prodetails .single-pro-details input {
+    height: 40px;
+    padding: 0 10px;
+}
+
+#prodetails .single-pro-details button{
+    background: #088178;
+    color: #fff;
+}
 #page-header.blog-header{
-    background-image: url(img/knowmore.webp);
+    background-image: url(img/dark.banner.jpg);
 }
 
 #blog {
